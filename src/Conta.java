@@ -1,16 +1,12 @@
 
-
 public class Conta {
 	double saldo;
 	int agencia;
 	int numero;
 	String titular;
-	String cpf;
-	String profissao;
 	
 	void deposita(double valor) {
 		this.saldo+= valor;
-
 	}
 	public boolean saca (double valor) {
 		if(this.saldo >= valor) {
@@ -19,8 +15,7 @@ public class Conta {
 			return true;
 		}else {
 			System.out.println("valor insuficiente");
-			return false;
-			
+			return false;	
 		}
 	}
 	public boolean transfere(double valor, Conta destino) {
